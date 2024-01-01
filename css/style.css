@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #282b44;
+  font-weight: 700;
+}
+
+p,
+li {
+  color: #41404f;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  border: solid 1px #a6a6a8;
+  margin-bottom: 1.5rem;
+}
+
+input::placeholder {
+  color: #a6a6a8;
+}
+
+button {
+  color: white;
+  background-color: #282b44;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+body {
+  background-color: #36384d;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.sign-up-card {
+  background-color: white;
+  margin: auto;
+  width: min(70%, 850px);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-left {
+  padding: 4rem 2rem;
+}
+
+.card-left p {
+  margin-bottom: 1.5rem;
+}
+
+.card-left ul {
+  margin-bottom: 2rem;
+}
+
+.card-left li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.label {
+  color: #282b44;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.label .valid-email-text {
+  color: #fa5a62;
+  display: none;
+}
+
+.success-subscribe-card {
+  background-color: white;
+  margin-inline: auto;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  width: min(28%, 450px);
+}
+
+.success-subscribe-card svg {
+  background-color: #fa5a62;
+  border-radius: 2rem;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-success {
+  margin-bottom: 1.5rem;
+}
+
+.success-subscribe-card p {
+  margin-bottom: 2rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  .sign-up-card {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .card-left {
+    padding: 1rem;
+  }
+  .success-subscribe-card {
+    width: 100%;
+    padding: 10rem 1rem 4rem;
+  }
+  .success-subscribe-card p {
+    margin-bottom: 12rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sign-up-card {
+    width: min(92%, 850px);
+  }
+  .success-subscribe-card {
+    width: min(47%, 450px);
+  }
+}
