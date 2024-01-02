@@ -68,8 +68,8 @@ body {
 .sign-up-card {
   background-color: white;
   margin: auto;
-  width: min(70%, 850px);
-  padding: 2rem 1.5rem;
+  width: min(75%, 900px);
+  padding: 2rem 0;
   padding-left: 0;
   border-radius: 1rem;
   display: grid;
@@ -158,7 +158,7 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) {
   .sign-up-card {
     width: min(92%, 850px);
   }
