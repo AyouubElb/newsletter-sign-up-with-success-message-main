@@ -3,10 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const subscribeButton = document.querySelector(".subscribe");
   const signUp = document.querySelector(".sign-up-card");
   const successSubscribe = document.querySelector(".success-subscribe-card");
-
-  emailInput.addEventListener("keyup", () => {
-    testEmail();
-  });
+  const dismissButton = document.querySelector(".dismiss-button");
 
   subscribeButton.addEventListener("click", () => {
     testEmail();
@@ -29,4 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
       successSubscribe.style.display = "block";
     }
   }
+
+  dismissButton.addEventListener("click", () => {
+    signUp.style.display = "grid";
+    successSubscribe.style.display = "none";
+  });
 });
