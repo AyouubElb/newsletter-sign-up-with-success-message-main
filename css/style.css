@@ -116,7 +116,7 @@ body {
   margin-inline: auto;
   border-radius: 1rem;
   padding: 2rem 3rem;
-  width: min(28%, 450px);
+  width: min(45%, 450px);
 }
 
 .success-subscribe-card svg {
@@ -132,6 +132,14 @@ body {
 
 .success-subscribe-card p {
   margin-bottom: 2rem;
+}
+
+.email-submitted {
+  font-weight: 700;
+}
+
+.dismiss-button {
+  margin-bottom: 1rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
