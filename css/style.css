@@ -31,7 +31,8 @@ h1 {
 p,
 li {
   color: #41404f;
-  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 input {
@@ -68,8 +69,8 @@ body {
 .sign-up-card {
   background-color: white;
   margin: auto;
-  width: min(75%, 900px);
-  padding: 2rem 0;
+  width: min(80%, 950px);
+  padding: 1.5rem;
   padding-left: 0;
   border-radius: 1rem;
   display: grid;
@@ -109,6 +110,10 @@ body {
 .label .valid-email-text {
   color: #fa5a62;
   display: none;
+}
+
+.card-right {
+  margin-left: auto;
 }
 
 .success-subscribe-card {
@@ -157,20 +162,11 @@ body {
     padding: 1rem;
   }
   .success-subscribe-card {
-    width: 100%;
+    width: 95%;
     padding: 10rem 1rem 4rem;
   }
   .success-subscribe-card p {
+    font-size: 1rem;
     margin-bottom: 12rem;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 992px) {
-  .sign-up-card {
-    width: min(92%, 850px);
-  }
-  .success-subscribe-card {
-    width: min(47%, 450px);
   }
 }
